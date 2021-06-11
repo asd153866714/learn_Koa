@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const app = new Koa()
 
-app.use(async (ctx, next) => {
+app.use(async (ctx) => {
     console.log('1')
     await next()
     console.log('11')
